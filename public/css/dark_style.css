@@ -1,0 +1,155 @@
+:root {
+    --dark-bg: #121212;
+    --dark-bg-alt: #1a1a1a;
+    --dark-header: #1c1c1c;
+    --dark-card: #1e1e1e;
+    --dark-text: #f0f0f0;
+    --dark-primary: #3b82f6;
+    --dark-secondary: #60a5fa;
+    --dark-border: #122d5a;
+    --dark-shadow: rgba(0, 0, 0, 0.6);
+    --dark-color: #1e1e1e;
+}
+
+body.dark,
+.dark .project-card,
+.dark .education-card,
+.dark .skills-category,
+.dark .certification-card,
+.dark .certifications-section {
+    color: var(--dark-text);
+    border-color: var(--dark-border);
+    background-color: var(--dark-card);
+    box-shadow: 0 4px 16px var(--dark-shadow);
+}
+
+.dark .skill-item{
+    color: var(--dark-text);
+    border-color: var(--dark-border);
+    background-color: var(--dark-card);
+}
+
+.dark .header-top {
+    background-color: var(--dark-header);
+}
+
+.dark .header-middle img {
+    border: 2px solid var(--dark-border);
+}
+
+.dark main {
+    background-color: var(--dark-card);
+}
+
+.dark #about .background {
+    color: var(--dark-text);
+    background-color: var(--dark-card);
+    border-left: 5px solid var(--dark-border);
+    box-shadow: 0 4px 16px var(--dark-shadow);
+}
+
+.dark .project-info h3 {
+    color: var(--dark-primary);
+}
+
+.dark .project-info p {
+    color: var(--dark-text);
+}
+
+.dark .project-tags span {
+  background-color: var(--dark-bg-alt);
+  color: var(--dark-secondary);
+}
+
+.dark .project-tags span {
+    background: #1a1a1a;
+    color: #e5ded5;
+}
+
+.dark .btn-secondary {
+  background-color: var(--dark-primary);
+  color: var(--white);
+  border-color: var(--dark-border);
+}
+
+.dark .btn-secondary:hover {
+  background-color: #2563eb;
+}
+
+.dark .category-header h3 {
+    color: var(--dark-primary);
+}
+
+.dark .category-header h3 {
+  color: var(--text-color);
+}
+
+.dark .skill-item p {
+    color: var(--dark-text);
+}
+
+.dark .education-status {
+  color: var(--dark-text);
+  background: var(--dark-primary);
+  box-shadow: 0 2px 8px var(--dark-shadow);
+}
+
+.dark .education-status.completed {
+  color: var(--white);
+  background: var(--dark-secondary);
+}
+
+.dark .education-highlights span {
+  background: var(--dark-bg-alt);
+  color: var(--dark-secondary);
+  border: 1px solid var(--dark-border);
+}
+
+.dark .cert-icon {
+  color: var(--dark-primary);
+}
+
+.dark .certification-card h4 {
+  color: var(--dark-secondary);
+}
+
+.dark .certification-card p {
+  color: var(--dark-text);
+}
+
+.dark .cert-year {
+  color: var(--dark-primary);
+  background: var(--dark-header);
+  box-shadow: 0 1px 4px var(--dark-shadow);
+}
+
+.dark #contact {
+    background-color: var(--dark-card);
+    color: var(--dark-text);
+    border-top: 5px solid var(--dark-border);
+    box-shadow: 0 4px 16px var(--dark-shadow);
+}
+
+.dark .contact-item i {
+    color: var(--dark-primary);
+}
+
+.dark .contact-item p,
+.dark .contact-item a {
+    color: var(--dark-text);
+}
+
+.dark #back-to-top {
+    color: var(--dark-text);
+    background: var(--dark-primary);
+    box-shadow: 0 4px 10px var(--dark-shadow);
+}
+
+.dark h4, .dark h3, .dark h2  {
+  color: var(--dark-secondary) !important;
+}
+
+.dark main h1, .dark strong{
+  color: var(--dark-primary) !important;
+  font-weight: 700;
+}
