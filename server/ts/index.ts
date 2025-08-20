@@ -1,16 +1,24 @@
 import express, { type Request, type Response } from "express";
-import path from "path";
 import { fileURLToPath } from "url";
+import path from "path";
+
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+
 
 const app = express();
 const port = 3000;
 app.use(express.static(path.join(__dirname, "../../public")))
 
+
+
 app.get("/", (req: Request, res: Response) => {
-    res.sendFile(path.join(__dirname, "../../public/index.html"))
+    res.sendFile(path.join(__dirname, "../../public/index.html"), err => {
+        if (err) {
+            res.status(404).send("Página principal não encontrada.");
+        }
+    });
 });
 
 app.get("/zeus", (req: Request, res: Response) => {
@@ -21,7 +29,6 @@ app.get("/zeus", (req: Request, res: Response) => {
     });
 });
 
-// Rotas para cada projeto
 app.get("/mariaBonita", (req: Request, res: Response) => {
     res.sendFile(path.join(__dirname, "../../public/html/mariaBonita.html"), err => {
         if (err) {
