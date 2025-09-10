@@ -37,8 +37,8 @@ app.get("/mariaBonita", (req: Request, res: Response) => {
     });
 });
 
-app.get("/LojaGames", (req: Request, res: Response) => {
-    res.sendFile(path.join(__dirname, "../../public/html/LojaGames.html"), err => {
+app.get("/store", (req: Request, res: Response) => {
+    res.sendFile(path.join(__dirname, "../../public/html/store.html"), err => {
         if (err) {
             res.status(404).send("Página da loja online não encontrada.");
         }

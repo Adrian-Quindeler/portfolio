@@ -21,37 +21,16 @@ app.get("/zeus", (req, res) => {
     });
 });
 app.get("/mariaBonita", (req, res) => {
-    res.sendFile(path.join(__dirname, "../../public/html/mariaBonita.html"), err => {
+    res.sendFile(path.join(__dirname, "../../public/html/sistema_mb.html"), err => {
         if (err) {
             res.status(404).send("Página do projeto da Maria Bonita não encontrada.");
         }
     });
 });
-app.get("/autoatendimento", (req, res) => {
-    res.sendFile(path.join(__dirname, "../../public/html/autoatendimento.html"), err => {
-        if (err) {
-            res.status(404).send("Página do protótipo de autoatendimento não encontrada.");
-        }
-    });
-});
-app.get("/LojaGames", (req, res) => {
-    res.sendFile(path.join(__dirname, "../../public/html/LojaGames.html"), err => {
+app.get("/store", (req, res) => {
+    res.sendFile(path.join(__dirname, "../../public/html/store.html"), err => {
         if (err) {
             res.status(404).send("Página da loja online não encontrada.");
-        }
-    });
-});
-app.get("/api-java", (req, res) => {
-    res.sendFile(path.join(__dirname, "../../public/html/api-java.html"), err => {
-        if (err) {
-            res.status(404).send("Página das APIs em Java não encontrada.");
-        }
-    });
-});
-app.get("/portfolio-jornalista", (req, res) => {
-    res.sendFile(path.join(__dirname, "../../public/html/portfolio-jornalista.html"), err => {
-        if (err) {
-            res.status(404).send("Página do portfólio da jornalista não encontrada.");
         }
     });
 });

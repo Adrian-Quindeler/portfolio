@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node --loader ts-node/esm server/ts/index.ts",
-    "build": "npx tsc",
+    "build": "tsc",
     "start": "node server/dist/index.js"
   },
   "keywords": [],
@@ -22,4 +22,5 @@
   "dependencies": {
     "express": "^5.1.0"
   }
+  
 }
