@@ -1,5 +1,6 @@
 let lastScroll = 0;
 const headerTop = document.querySelector('.header-top');
+const mobileMenu = document.querySelector('.mobile-menu');
 let timeout = null;
 
 window.addEventListener('scroll', () =>{
@@ -7,11 +8,18 @@ window.addEventListener('scroll', () =>{
 
     if(currentScroll > lastScroll){
         clearTimeout(timeout);
-        timeout = setTimeout(() => {headerTop.style.transform = "translateY(-100%)"}, 150);
+        timeout = setTimeout(() => {
+            headerTop.style.transform = "translateY(-100%)";
+            if (mobileMenu) {
+                mobileMenu.style.transform = 'translateX(150%)'; 
+            }
+        }, 300);
     }
     else{
         clearTimeout(timeout);
-        timeout = setTimeout(() => {headerTop.style.transform = "translateY(0)"}, 150);
+        timeout = setTimeout(() => {
+            headerTop.style.transform = "translateY(0)";
+        }, 300);
     }
 
     lastScroll = currentScroll <= 0 ? 0 : currentScroll;
@@ -27,7 +35,8 @@ document.addEventListener('DOMContentLoaded', function () {
             if (window.scrollY > 200) {
                 backToTopBtn.style.transform = 'translateY(0)';
                 backToTopBtn.style.opacity = '1';
-            } else {
+            } 
+            else {
                 backToTopBtn.style.transform = 'translateY(100%)';
                 backToTopBtn.style.opacity = '0';
             }
@@ -46,13 +55,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Modo escuro/claro
     const moonBtn = document.querySelector('.fa-moon');
+    const sunBtn = document.querySelector('.fa-sun');
     if (moonBtn) {
-        // Cria o ícone de sol
-        let sunBtn = document.createElement('i');
-        sunBtn.className = 'fas fa-sun';
-        sunBtn.style.display = 'none';
-        sunBtn.style.cursor = 'pointer';
-        moonBtn.parentNode.insertBefore(sunBtn, moonBtn.nextSibling);
 
         // Alterna modo escuro
         function setDarkMode(isDark) {
@@ -65,6 +69,7 @@ document.addEventListener('DOMContentLoaded', function () {
         moonBtn.addEventListener('click', function () {
             setDarkMode(true);
         });
+        
         sunBtn.addEventListener('click', function () {
             setDarkMode(false);
         });
@@ -74,5 +79,18 @@ document.addEventListener('DOMContentLoaded', function () {
         if (savedTheme === 'dark') {
             setDarkMode(true);
         }
+    }
+
+    // Mobile menu toggle functionality
+    const menuToggle = document.querySelector('.menu-toggle');
+
+    if (menuToggle && mobileMenu) {
+        menuToggle.addEventListener('click', () => {
+            if (mobileMenu.style.transform === 'translateX(0px)') {
+                mobileMenu.style.transform = 'translateX(150%)'; 
+            } else {
+                mobileMenu.style.transform = 'translateX(0)'; 
+            }
+        });
     }
 });

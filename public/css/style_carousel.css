@@ -8,7 +8,6 @@ header:hover {
     box-shadow: 0 0 0;
 }
 
-
 .modulo-box {
     background-color: #f8f9fa;
     border: 1px solid #dee2e6;
@@ -43,7 +42,7 @@ h2 {
     border-radius: 12px;
 }
 
- img {
+img {
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -72,28 +71,6 @@ h2 {
     transition: background-color 0.3s ease;
 }
 
-.dark  {
-    box-shadow: 0 8px 20px var(--dark-shadow);
-}
-
-.dark .carousel-indicators li {
-    background-color: var(--dark-secondary);
-}
-
-.dark .carousel-indicators .active {
-    background-color: var(--dark-primary);
-}
-
-.dark .carousel-control-prev-icon,
-.dark .carousel-control-next-icon {
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-.dark .carousel-control-prev-icon:hover,
-.dark .carousel-control-next-icon:hover {
-    background-color: var(--dark-primary);
-}
-
 .carousel-caption {
     background-color: #000000AA;
     padding: 15px;
@@ -104,4 +81,63 @@ h2 {
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     filter: invert(1);
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+    header {
+        height: auto;
+        padding: 1rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .modulo-box {
+        padding: 1rem;
+        margin: 1.5rem auto;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+        padding-left: 0.5rem;
+    }
+
+    .carousel {
+        margin-top: 1rem;
+        box-shadow: 0 4px 10px var(--shadow-color);
+    }
+
+    .carousel-caption {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .carousel-indicators li {
+        width: 8px;
+        height: 8px;
+        margin: 0 3px;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        padding: 10px;
+    }
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1050; /* Certifique-se de que o botão está acima do carrossel */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
