@@ -67,73 +67,86 @@
     </header>
     <main>
 
-        <section id="projects" class="projects section-padding">
-            <div class="container">
-                <div class="section-header">
-                    <h1 class="mt-5">Loja Online</h1>
-                    <div class="underline"></div>
-                </div>
+    <section id="projects" class="projects section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="mt-5">Loja Online</h1>
+                <div class="underline"></div>
+            </div>
 
-                <p class="mt-4">
-                    Projeto de uma loja online de jogos, consoles e peças de computador que oferece uma interface amigável para os usuários navegarem por diferentes categorias de produtos. 
-                    Feito com bootstrap para o layout responsivo, além de html, css e javascript. O sistema é usa o banco de dados padrão do Django, SQLite, para gerenciar o catálogo de produtos, permitindo fácil atualização e manutenção.
-                </p>
+            <p class="mt-4">
+                Esta é uma loja online desenvolvida para venda de jogos, consoles e peças de computador, com uma interface intuitiva que permite aos usuários navegar facilmente por diferentes categorias de produtos. O sistema foi construído com HTML, CSS, JavaScript e Bootstrap para garantir um layout responsivo, e utiliza Django com SQLite como banco de dados, facilitando o gerenciamento e atualização dos produtos.
+            </p>
 
-                <div class="modulo-box">
-                    <h2></h2>
-                    <div id="tela" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#tela" data-slide-to="0" class="active"></li>
-                            <li data-target="#tela" data-slide-to="1"></li>
-                            <li data-target="#tela" data-slide-to="2"></li>
-                            <li data-target="#tela" data-slide-to="3"></li>
-                            <li data-target="#tela" data-slide-to="4"></li>
-                        </ol>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img class="d-block w-100" src="../img/G4G/inicio.jpg" alt="Tela inicial">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Tela inicial</h5>
-                                    <p>Mostra a promoção em destaque e os tipos de produtos disponíveis.</p>
-                                </div>
+            <p class="alert alert-warning d-block d-md-none mt-3 text-center font-weight-bold">
+                ⚠️ Para melhor visualização das imagens, gire o celular na horizontal.
+            </p>
+
+            <div class="modulo-box">
+                <div id="tela" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#tela" data-slide-to="0" class="active"></li>
+                        <li data-target="#tela" data-slide-to="1"></li>
+                        <li data-target="#tela" data-slide-to="2"></li>
+                        <li data-target="#tela" data-slide-to="3"></li>
+                        <li data-target="#tela" data-slide-to="4"></li>
+                        <li data-target="#tela" data-slide-to="5"></li>
+                        <li data-target="#tela" data-slide-to="6"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="../img/G4G/inicio.jpg" alt="Tela inicial da loja online">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Tela Inicial</h5>
+                                <p>Apresenta a home da loja com banners promocionais em destaque e categorias principais para fácil navegação.</p>
                             </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="../img/G4G/jogos_todos.jpg" alt="Tela da loja com todos os jogos">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Jogos</h5>
-                                    <p>Esta tela mostra um catálogo de jogos disponíveis sem nenhum filtro.</p>
-                                </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="../img/G4G/jogos_todos.jpg" alt="Página de todos os jogos disponíveis na loja">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Catálogo de Jogos</h5>
+                                <p>Lista completa dos jogos disponíveis, com visual limpo e organizado para facilitar a escolha do cliente.</p>
                             </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="../img/G4G/jogos_populares.jpg" alt="Tela da loja com jogos populares">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Jogos Populares</h5>
-                                    <p>Mostra os jogos mais populares disponíveis na loja.</p>
-                                </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="../img/G4G/jogos_populares.jpg" alt="Página com jogos populares na loja">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Jogos Populares</h5>
+                                <p>Exibe os títulos mais vendidos ou bem avaliados, ajudando o cliente a descobrir os mais procurados da loja.</p>
                             </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="../img/G4G/consoles_todos.jpg" alt="Tela da loja com todos os consoles">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Consoles</h5>
-                                    <p>Esta tela mostra um catálogo de consoles disponíveis sem nenhum filtro.</p>
-                                </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="../img/G4G/consoles_todos.jpg" alt="Página com todos os consoles disponíveis na loja">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Catálogo de Consoles</h5>
+                                <p>Mostra todos os consoles disponíveis para compra, sem filtros aplicados, incluindo marcas e modelos variados.</p>
                             </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="../img/G4G/consoles_novos.jpg" alt="Tela da loja com os lançamentos">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Consoles Novos</h5>
-                                    <p>Esta tela mostra os lançamentos mais recentes de consoles disponíveis na loja.</p>
-                                </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="../img/G4G/consoles_novos.jpg" alt="Página com os lançamentos de consoles">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Lançamentos de Consoles</h5>
+                                <p>Apresenta os consoles mais recentes adicionados à loja, ideal para clientes que buscam novidades do mercado.</p>
                             </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="../img/G4G/banco_dados.jpg" alt="Tela da loja com os lançamentos">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Banco de Dados</h5>
-                                    <p>A tela busca informações do DB onde os itens são cadastrados, categorizados e gerenciados.</p>
-                                </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="../img/G4G/banco_dados.jpg" alt="Tela do painel de administração com os produtos cadastrados">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Administração e Banco de Dados</h5>
+                                <p>Visualização da área administrativa onde os produtos são cadastrados, editados e organizados via Django e SQLite.</p>
                             </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="../img/G4G/g4g.jpg" alt="Logo da loja, as letras G4G (galaxze for geeks) em cima de uma galáxia">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="../img/G4G/g4g.jpg" alt="Logo da loja G4G sobre uma galáxia">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Logo da Loja</h5>
+                                <p>Identidade visual da G4G (Galaxze for Geeks), reforçando a temática geek da marca.</p>
                             </div>
                         </div>
                         <a class="carousel-control-prev" href="#tela" role="button" data-slide="prev">
@@ -146,7 +159,8 @@
                         </a>
                     </div>
                 </div>
-        </section>
+            </div>
+    </section>
     </main>
 
     <button id="back-to-top" title="Voltar ao topo">

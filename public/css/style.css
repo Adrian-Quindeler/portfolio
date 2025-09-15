@@ -482,19 +482,6 @@ a:hover {
     margin-bottom: 1rem;
 }
 
-.education-icon {
-    width: 48px;
-    height: 48px;
-    display: flex;
-    font-size: 2rem;
-    border-radius: 50%;
-    color: var(--white);
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 2px 8px var(--shadow-color);
-    background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
-}
-
 .education-info h3 {
     margin: 0;
     font-weight: 600;
@@ -870,11 +857,6 @@ a:hover {
         box-shadow: 0 2px 8px var(--shadow-color);
     }
 
-
-    #education .education-icon,
-    #education .cert-icon {
-        display: none;
-    }
 
     .education-header{
         flex-direction: column;
